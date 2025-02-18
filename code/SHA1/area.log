@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : SHA1
+Version: O-2018.06
+Date   : Wed Aug 30 14:35:12 2023
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/CBDK/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+Number of ports:                         2459
+Number of nets:                         10449
+Number of cells:                         7720
+Number of combinational cells:           7005
+Number of sequential cells:               700
+Number of macros/black boxes:               0
+Number of buf/inv:                       1197
+Number of references:                     128
+
+Combinational area:              71901.863132
+Buf/Inv area:                     8111.874552
+Noncombinational area:           25817.454075
+Macro/Black Box area:                0.000000
+Net Interconnect area:          925591.330566
+
+Total cell area:                 97719.317207
+Total area:                    1023310.647773
+1

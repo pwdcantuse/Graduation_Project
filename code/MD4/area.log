@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : MD4
+Version: O-2018.06
+Date   : Wed Aug 30 14:24:43 2023
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/CBDK/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+Number of ports:                         1653
+Number of nets:                          4936
+Number of cells:                         3466
+Number of combinational cells:           3309
+Number of sequential cells:               148
+Number of macros/black boxes:               0
+Number of buf/inv:                       1044
+Number of references:                     111
+
+Combinational area:              48362.320678
+Buf/Inv area:                    11348.816329
+Noncombinational area:            4958.105358
+Macro/Black Box area:                0.000000
+Net Interconnect area:          356815.120697
+
+Total cell area:                 53320.426036
+Total area:                     410135.546733
+1

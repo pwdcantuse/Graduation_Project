@@ -1,0 +1,69 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : SHA1
+Version: O-2018.06
+Date   : Wed Aug 30 14:35:12 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: B_reg[27] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hash[153] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SHA1               tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  B_reg[27]/CK (DFFSX4)                    0.00       0.50 r
+  B_reg[27]/QN (DFFSX4)                    0.26       0.76 f
+  U4095/Y (INVX12)                         0.13       0.89 r
+  add_53/B[0] (SHA1_DW01_add_22)           0.00       0.89 r
+  add_53/U534/Y (NAND2X8)                  0.10       0.99 f
+  add_53/U344/Y (OAI21X4)                  0.20       1.19 r
+  add_53/U446/Y (CLKINVX3)                 0.14       1.32 f
+  add_53/U468/Y (BUFX12)                   0.14       1.46 f
+  add_53/U467/Y (OAI21X4)                  0.12       1.58 r
+  add_53/U664/Y (XNOR2X2)                  0.18       1.75 f
+  add_53/SUM[3] (SHA1_DW01_add_22)         0.00       1.75 f
+  U3948/Y (BUFX4)                          0.25       2.00 f
+  add_54/B[3] (SHA1_DW01_add_23)           0.00       2.00 f
+  add_54/U317/Y (INVXL)                    0.64       2.64 r
+  add_54/U351/Y (NOR2X1)                   0.23       2.87 f
+  add_54/U350/Y (NAND2X1)                  0.33       3.20 r
+  add_54/U308/Y (NOR2X2)                   0.21       3.41 f
+  add_54/U272/Y (AOI21X4)                  0.20       3.62 r
+  add_54/U222/Y (OR2X4)                    0.19       3.80 r
+  add_54/U223/Y (NAND2X4)                  0.09       3.89 f
+  add_54/U225/Y (INVX3)                    0.30       4.19 r
+  add_54/U366/Y (OA21XL)                   0.41       4.60 r
+  add_54/U275/Y (XNOR2X2)                  0.23       4.83 r
+  add_54/SUM[25] (SHA1_DW01_add_23)        0.00       4.83 r
+  U4023/Y (AND2X4)                         0.21       5.04 r
+  U3971/Y (BUFX12)                         0.66       5.70 r
+  hash[153] (out)                          0.00       5.70 r
+  data arrival time                                   5.70
+
+  clock clk (rise edge)                    5.80       5.80
+  clock network delay (ideal)              0.50       6.30
+  clock uncertainty                       -0.10       6.20
+  output external delay                   -0.50       5.70
+  data required time                                  5.70
+  -----------------------------------------------------------
+  data required time                                  5.70
+  data arrival time                                  -5.70
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
